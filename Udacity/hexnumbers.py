@@ -63,13 +63,16 @@
 
 import ply.lex as lex
 
-tokens = ('NUM', 'ID')
+tokens = ('NUM', 'ID', HEX)
 
 ####
 # Fill in your code here.
 ####
-
-
+def t_HEX_number(token):
+  r'[0-9a-f]+'
+  token.
+  
+#### end of my code
 def t_NUM_decimal(token):
   r'[0-9]+'
   token.value = int(token.value) # won't work on hex numbers!
