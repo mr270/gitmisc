@@ -70,7 +70,6 @@ tokens = ('NUM', 'ID', HEX)
 ####
 def t_HEX_number(token):
   r'[0-9a-f]+'
-  token.
   
 #### end of my code
 def t_NUM_decimal(token):
